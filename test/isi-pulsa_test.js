@@ -1,0 +1,38 @@
+Feature('Test modal rakyat');
+
+Scenario('test something', (I) => {
+    I.amOnPage('https://www.tokopedia.com/pulsa/');
+    I.wait(5);
+    I.fillField('.unf-input-group.css-ozlcme.eqk3cat2 input[name=client_number]','085271694132');
+    I.wait(5);
+    I.click('._3vGjK ._1ZAC-:nth-child(3)');
+    I.wait(5);
+    I.click('._2orE7 ._2Mp9y');
+    I.wait(10);
+    I.fillField('.unf-user-input.mb-16 input[name=email]');
+    I.wait(5);
+    I.click('js__continue-login-form.unf-user-btn');
+    I.wait(5);
+    I.click('.splash-box.cotp__box--change-method #cotp__method--sms');
+    I.wait(5);
+    I.fillField('#otp-input .input-append .pincode-input-container input:nth-child(1)','1');
+    I.wait(5);
+    I.fillField('#otp-input .input-append .pincode-input-container input:nth-child(2)','1');
+    I.wait(5);
+    I.fillField('#otp-input .input-append .pincode-input-container input:nth-child(3)','1');
+    I.wait(5);
+    I.fillField('#otp-input .input-append .pincode-input-container input:nth-child(4)','1');
+    I.wait(5);
+    I.fillField('#otp-input .input-append .pincode-input-container input:nth-child(5)','1');
+    I.wait(5);
+    I.fillField('#otp-input .input-append .pincode-input-container input:nth-child(6)','1');
+    I.wait(5);
+    I.click('.unf-user-list .js__select-item:nth-child(1) .unf-user-list__item-container');
+    I.wait(5);
+    I.click('.checkout-footer .checkout-footer-pay .checkout-footer-button');
+    I.wait(5);
+    I.click('#home .payment__box__shadow:nth-child(6) .payment-main.history');
+    I.wait();
+    I.click('.btn-floating a');
+    I.wait('10');
+});
