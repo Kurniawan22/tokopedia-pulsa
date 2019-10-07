@@ -13,7 +13,7 @@ Scenario('test something', (I) => {
     I.wait(5);
     I.click('#login-step-one-form button');
     I.wait(5);
-    I.fillField('.unf-user-input__group input[name=password]','akusayangkamu123');
+    I.fillField('.unf-user-input__group input[name=password]','');
     I.wait(5);
     I.click('#login-submit');
     I.wait(10);
